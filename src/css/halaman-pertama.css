@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    background-image: url(../img/index.png);
+    height: 100vh; /* Ini akan membuat tinggi gambar sama dengan tinggi viewport */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .container .body-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .container .body-text ul {
+    font-size: large;
+  }
+  .container .body-text ul li {
+    list-style: decimal;
+  }
+  .container .body-text button {
+    background-color: transparent;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+  }
+  .container .body-text button:hover {
+    background-color: darkgray;
+  }
+  
+  .container .body-text a {
+    text-decoration: none;
+    color: white;
+  }

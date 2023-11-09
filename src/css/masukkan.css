@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #4141e6, #03ddfa);
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #4141e6, #03ddfa);
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-kotak{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-kotak .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-kotak input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px ;
+    transition: all 0.3s ease;
+}
+.user-details .input-kotak input:focus,
+.user-details .input-kotak input:valid{
+    border-color: #4141e6;
+}
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+form .gender-details .centang{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.gender-details .centang label{
+    display: flex;
+    align-items: center;
+}
+.gender-details .centang .titik{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+}
+ #titik-1:checked ~ .centang label .satu,
+ #titik-2:checked ~ .centang label .dua,
+ #titik-3:checked ~ .centang label .tiga{
+    border-color: #d9d9d9;
+    background: #03ddfa;
+ }
+ form input[type="radio"]{
+    display: none;
+ }
+ form .button{
+     height: 45px;
+     margin: 45px 0;
+     display: flex;
+ }
+form .button button{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: linear-gradient(-135deg, #4141e6, #03ddfa);
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+}
+ @media (max-width: 584px){
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input-kotak{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .gender-details .centang{
+        width: 100%;
+    }
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
+ }

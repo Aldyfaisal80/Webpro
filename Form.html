@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./src/css/masukkan.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Form Kritik dan Saran</div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-kotak">
+                    <span class="details">Nama</span>
+                    <input type="text" placeholder="Ketik Nama disini" required>
+                </div>
+                <div class="input-kotak">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Ketik Email disini" required>
+                </div>
+                <div class="input-kotak">
+                    <span class="details">Umur</span>
+                    <input type="text" placeholder="Ketik Umur disini" required>
+                </div>
+                <div class="input-kotak">
+                    <span class="details">Alamat</span>
+                    <input type="text" placeholder="Ketik Alamat disini" required>
+                </div>
+                <div class="input-kotak">
+                    <span class="details">Tanggal</span>
+                    <input type="date" id="tanggal" name="tanggal" required>
+                </div>
+                <div class="input-kotak">
+                    <span class="details">Semester</span>
+                <select name="" id="" style="margin-left: 5px;">
+                    <option value="">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                </div>
+                <div class="input-kotak">
+                    <span class="details">Fakultas</span>
+                    <select name="" id="" style="margin-left: 5px;">
+                        <option value="Fakultas Ekonomi">Fakultas Ekonomi</option>
+                        <option value="Fakultas Pertanian">Fakultas Pertanian</option>
+                        <option value="Fakultas Pertenakan">Fakultas Pertenakan</option>
+                        <option value="Fakultas Teknologi Informasi">Fakultas Teknologi Informasi</option>
+                        <option value="Fakultas Ilmu Sosial dan Ilmu Politik">Fakultas Ilmu Sosial dan Ilmu Politik</option>
+                        <option value="Fakutas Teknik">Fakutas Teknik</option>
+                        <option value="Fakultas Hukum">Fakutas Hukum</option>
+                        <option value="Fakutas Keguruan dan Ilmu Pendidikan">Fakutas Keguruan dan Ilmu Pendidikan</option>
+                    </select>
+                </div>
+            </div>
+            <div class="gender-details">
+                <input type="radio" name="gender" id="titik-1">
+                <input type="radio" name="gender" id="titik-2">
+                <input type="radio" name="gender" id="titik-3">
+                <span class="gender-title">Jenis Kelamin</span>
+                <div class="centang">
+                    <label for="titik-1">
+                        <span class="titik satu"></span>
+                        <span class="gender">Laki-Laki</span>
+                    </label>
+                    <label for="titik-2">
+                        <span class="titik dua"></span>
+                        <span class="gender">Perempuan</span>
+                    </label>
+                    <label for="titik-3">
+                        <span class="titik tiga"></span>
+                        <span class="gender">Tidak diketahui</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <button>Send</></button>
+                <button><a href="webpro.html">Cancel</a></button>
+                <!-- <input type="submit" value="Send">
+                <input  type="button" value="Cancel" href="./webpro.html"> <a href="./webpro.html"></a> -->
+            </div>
+        </form>
+    </div>
+</body>
+</html>
